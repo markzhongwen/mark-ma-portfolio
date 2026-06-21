@@ -185,7 +185,7 @@ nav {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(7, 22, 47, 0.95) 0%, rgba(7, 22, 47, 0.78) 46%, rgba(7, 22, 47, 0.48) 100%),
-    url("/assets/hero-lab.png") center right / cover no-repeat;
+    url("/assets/hero-lab.jpg") center right / cover no-repeat;
 }
 
 .hero::after {
@@ -505,7 +505,7 @@ h2 {
   color: var(--white);
   background:
     linear-gradient(135deg, rgba(7, 22, 47, 0.96), rgba(9, 55, 105, 0.94)),
-    url("/assets/hero-lab.png") center / cover no-repeat;
+    url("/assets/hero-lab.jpg") center / cover no-repeat;
 }
 
 .contact-section h2 {

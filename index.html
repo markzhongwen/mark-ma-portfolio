@@ -20,14 +20,14 @@
       property="og:description"
       content="Expert GxP/CSV Compliance, SAP Lifecycles, and SmartLab AI PMO Services for Global BioPharma Leaders."
     />
-    <meta property="og:image" content="/assets/hero-lab.png" />
+    <meta property="og:image" content="https://mark-ma.vercel.app/assets/hero-lab.jpg" />
     <meta property="og:url" content="https://mark-ma.vercel.app/" />
     <meta property="og:site_name" content="Mark Ma Consulting" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mark Ma | Senior Pharmaceutical GxP Consultant" />
     <meta name="twitter:description" content="Expert GxP/CSV Compliance, SAP Lifecycles, and SmartLab AI PMO Services." />
-    <meta name="twitter:image" content="/assets/hero-lab.png" />
+    <meta name="twitter:image" content="https://mark-ma.vercel.app/assets/hero-lab.jpg" />
     <meta name="theme-color" content="#07162f" />
     <meta name="google-site-verification" content="1vQgkWJ5fA-ZS8AKBYM-wUA8U-LU5tYf1YLGHgV7a9M" />
     <meta name="geo.region" content="CN-GD" />
@@ -35,6 +35,9 @@
     <meta name="geo.position" content="22.5431;114.0579" />
     <meta name="ICBM" content="22.5431, 114.0579" />
     <link rel="canonical" href="https://mark-ma.vercel.app/" />
+    <link rel="preload" href="/assets/hero-lab.jpg" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
@@ -321,7 +324,7 @@
           }
         }
         
-        for (let i = 0; i < 80; i++) {
+        for (let i = 0; i < 40; i++) {
           particles.push(new Particle());
         }
         
@@ -337,11 +340,11 @@
               const dx = particles[i].x - particles[j].x;
               const dy = particles[i].y - particles[j].y;
               const dist = Math.sqrt(dx * dx + dy * dy);
-              if (dist < 120) {
+              if (dist < 80) {
                 ctx.beginPath();
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.strokeStyle = `rgba(25, 182, 210, ${0.1 * (1 - dist / 120)})`;
+                ctx.strokeStyle = `rgba(25, 182, 210, ${0.08 * (1 - dist / 80)})`;
                 ctx.stroke();
               }
             }
